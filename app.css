@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.125rem;
+}
+
+/* Form styling */
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather info section styling */
+#weather-info {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+}
+
+#weather-info h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+#weather-info p {
+    margin: 5px 0;
+    font-size: 1.125rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #form input[type="text"] {
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    
+    #form button {
+        width: 100%;
+    }
+    
+    #weather-info {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    #weather-info h1 {
+        font-size: 1.25rem;
+    }
+    
+    #weather-info p {
+        font-size: 1rem;
+    }
+}
